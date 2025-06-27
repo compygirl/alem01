@@ -1,0 +1,67 @@
+// package main
+
+// import "fmt"
+
+// // func addTen(b *int) {
+// // 	*b = *b + 10
+// // 	// return *b
+// // }
+
+// // func addTen(b int) int {
+// // 	b = b + 10
+// // 	return b
+// // }
+
+// func main() {
+// 	// Video 1
+// 	// aString := "Hello"
+// 	// aStringChanageable := []byte(aString)
+// 	// aStringChanageable[0] = 'A'
+// 	// // aString[0] = 'A'
+// 	// aStringFinalized := string(aStringChanageable)
+// 	// fmt.Println(aString)
+// 	// fmt.Println(aStringChanageable)
+// 	// fmt.Println(aStringFinalized)
+
+// 	// Video 2:
+// 	// slice := []string{
+// 	// 	"word1",
+// 	// 	"word2",
+// 	// 	"word3",
+// 	// 	"word4",
+// 	// 	"word5",
+// 	// 	"word6",
+// 	// }
+
+// 	// for _, word := range slice {
+// 	// 	// fmt.Printf("The index is: %v the element is: %v \n", index, word)
+// 	// 	fmt.Printf("The element is: %v \n", word)
+// 	// }
+
+// 	// fmt.Printf("%v\n", slice[2])
+
+// 	// Video 3 - about pointers
+// 	// a := 10
+// 	// fmt.Println(a)
+// 	// fmt.Printf("This is the address of a: %v\n", &a)
+// 	// var pointer *int = &a
+// 	// fmt.Println(pointer)
+
+// 	// Second version:
+// 	// a := 10
+// 	// a = addTen(a)
+// 	// println(a)
+
+// 	// Video 4:
+// 	a := 15
+// 	b := 10
+
+// 	division := a / b
+
+// 	c := 15 // 20
+// 	d := 10
+
+// 	modulo := c % d
+// 	fmt.Println(division)
+// 	fmt.Println(modulo)
+// }

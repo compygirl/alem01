@@ -1,0 +1,65 @@
+================================================================
+TASK 3: to-git-or-not-to-git
+================================================================
+1. about the curl: https://blog.hubspot.com/website/curl-command
+2. -s https://www.cyberciti.biz/faq/curl-hide-progress-bar-output-linux-unix-macos/
+3. --data : https://gist.github.com/subfuzion/08c5d85437d5d4f00e58
+4. egrep -o '[0-9.]+' - regular expression to clean and take only digits : https://stackoverflow.com/questions/55847590/get-only-numbers-in-output
+
+5. Another solution which is accepted (https://stackoverflow.com/questions/17883661/how-to-extract-numbers-from-a-string): | tr -d -c 0-9
+
+Solution:
+https://stackoverflow.com/questions/55847590/get-only-numbers-in-output
+chmod u+x filename permission for the file update
+================================================================
+TASK 4: who-are-you
+================================================================
+chmod u+x filename permission for the file update
+
+cat -e //look inside the file with $ at the end
+Solution:
+curl -s https://01.alem.school/assets/superhero/all.json | jq '.[]|select(.id==70)|.name'
+
+
+================================================================
+TASK 5: cl-camp1
+================================================================
+1. create bash: https://unix.stackexchange.com/questions/84686/how-to-create-custom-commands-in-unix-linux
+2. sort: https://www.networkworld.com/article/3572590/11-ways-to-list-and-sort-files-on-linux.html
+3. timing: https://linuxhandbook.com/sort-ls-by-date-time/
+4. slah: https://unix.stackexchange.com/questions/265127/how-do-get-ls-to-list-directories-with-a-trailing-forward-slash
+5. https://unix.stackexchange.com/questions/265127/how-do-get-ls-to-list-directories-with-a-trailing-forward-slash
+
+
+ls -p // adding slash for dir
+ls -u //sort by time
+ls -a //show all hidden files
+ls -m // commas
+Solution:
+#!/bin/bash
+ls -lt --format=comma --indicator-style=slash | tr -d ' '
+
+================================================================
+TASK 6: cl-camp2
+================================================================
+Just about \n
+Solution:
+R
+================================================================
+TASK 7: c1-camp3
+================================================================
+Regexp: https://unix.stackexchange.com/questions/84686/how-to-create-custom-commands-in-unix-linux
+
+ls | grep '^a' // starts with a
+ls | grep '.*z'  // ends with
+
+ls -d a*
+closer to solution:
+https://arkit.co.in/find-command-logical-and-or-and-not-examples/
+Solution:
+find  -name "a*" -o -name "*z" -o -name "z*a!"
+
+
+================================================================
+TASK 8: c1-camp4
+================================================================
